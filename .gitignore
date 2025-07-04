@@ -1,0 +1,11 @@
+# Ignore logs and OS files
+*.log
+.DS_Store
+Thumbs.db
+
+# Node/npm artifacts
+node_modules/
+
+# Editor swap files
+*~
+*.swp

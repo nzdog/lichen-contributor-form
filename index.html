@@ -11,7 +11,8 @@
     <h1>Workplace Transition Reflection</h1>
     <p>This is a space to reflect during organizational change. No pressure, no performance. Just a place to see what’s already true.</p>
 
-    <form id="transitionForm">
+    <form id="transitionForm" name="transitionForm" data-netlify="true">
+      <input type="hidden" name="form-name" value="transitionForm">
 
       <label for="stable">1. What part of your current work feels most stable right now?</label>
       <div class="why">Why this matters: Amid change, it helps to name what hasn’t moved. Steadiness creates orientation.</div>
@@ -48,8 +49,17 @@
       <div class="examples">Examples: “Protecting focus hours.” / “Speaking slower.” / “Waiting a beat before responding.”</div>
       <textarea id="rhythm" name="rhythm" rows="4" required></textarea>
 
+      <button type="button" id="saveButton">Save to Local Storage</button>
       <button type="submit">Submit Reflection</button>
     </form>
+    <div id="confirmModal" class="modal hidden">
+      <div class="modal-content">
+        <p>Are you sure?</p>
+        <button id="confirmSubmit">Submit</button>
+        <button id="cancelSubmit">Cancel</button>
+      </div>
+    </div>
   </main>
+  <script src="main.js"></script>
 </body>
 </html>
