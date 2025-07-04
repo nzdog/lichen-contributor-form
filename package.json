@@ -1,0 +1,11 @@
+{
+  "name": "lichen-contributor-form",
+  "version": "1.0.0",
+  "description": "Reflection form with Netlify integration",
+  "scripts": {
+    "test": "echo \"No tests specified\""
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.8.1"
+  }
+}
