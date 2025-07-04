@@ -11,37 +11,37 @@
     <h1>Lichen Contributor Protocol</h1>
     <p>This is not an application. It's an orientation. Take your time.</p>
 
-    <form id="lichenForm">
-      <label for="name">1. Who is entering the field?</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="alignment">
-        2. When you speak about your work, what energy moves through you?
-      </label>
-      <textarea id="alignment" name="alignment" rows="5" required></textarea>
-
-      <label for="resonance">
-        3. If Lichen is a living system, what does it ask of you?
-      </label>
-      <textarea id="resonance" name="resonance" rows="5" required></textarea>
-
-      <label for="transmission">
-        4. When you speak this system into the world, what do others feel?
-      </label>
-      <textarea id="transmission" name="transmission" rows="5" required></textarea>
-
-      <label for="integrity">
-        5. What part of this system must never be simplified—even for reach?
-      </label>
-      <textarea id="integrity" name="integrity" rows="5" required></textarea>
-
-      <label for="role">
-        6. What part of this ecosystem is yours to carry?
-      </label>
-      <textarea id="role" name="role" rows="5" required></textarea>
-
-      <button type="submit">Submit Reflection</button>
+    <form name="kiranReflection" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="lichenForm">
+      <input type="hidden" name="form-name" value="kiranReflection" />
+      <input type="hidden" name="bot-field" />
+    
+      <label for="q1">1. What part of your current work feels most stable right now?</label>
+      <textarea id="q1" name="q1" rows="4" required></textarea>
+    
+      <label for="q2">2. What part of your role is quietly shifting—even if nothing official has changed?</label>
+      <textarea id="q2" name="q2" rows="4" required></textarea>
+    
+      <label for="q3">3. What signals are you tracking right now—formally or informally?</label>
+      <textarea id="q3" name="q3" rows="4" required></textarea>
+    
+      <label for="q4">4. What patterns in yourself are showing up more strongly during this period?</label>
+      <textarea id="q4" name="q4" rows="4" required></textarea>
+    
+      <label for="q5">5. What would help you stay steady without isolating?</label>
+      <textarea id="q5" name="q5" rows="4" required></textarea>
+    
+      <label for="q6">6. What’s one decision you’re not ready to make yet—and that’s okay?</label>
+      <textarea id="q6" name="q6" rows="4" required></textarea>
+    
+      <label for="q7">7. If you were to move through this with rhythm, not reaction—what would that look like?</label>
+      <textarea id="q7" name="q7" rows="4" required></textarea>
+    
+      <div class="button-row">
+        <button type="submit">Submit Reflection</button>
+        <button type="button" id="saveButton">Save for Later</button>
+      </div>
     </form>
+    
   </main>
 
   <script src="main.js"></script>
